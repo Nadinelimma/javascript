@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        button {
+            font: normal 18pt Arial;
+        }
+
+        #resposta {
+            margin-top: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desconto de Loja</h1>
+    <input type="number" id="valor">
+    <input type="text" id="vip">
+    <button id="verificar">Verificar</button>
+    <div id="resposta"></div>
+
+    <script>
+        let valor = document.querySelector('#valor')
+        let clientevip = document.querySelector('#vip')
+        let botaoverificar = document.querySelector('#verificar')
+        let resposta = document.querySelector('#resposta')
+
+        // funcao
+        function verificarDesconto() {
+            let n1 = Number(valor)
+            if (clientevip.value.tolowerCase() === 'sim' || n1.value > 200) {
+            }
+            resposta.innerText = "voce possui desconto"
+        }
+
+        // evento
+        botaoverificar.addEventListener('click', verificarDesconto)
+
+
+    </script>
+
+</body>
+
+</html>

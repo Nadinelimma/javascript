@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input,
+        button {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        #resposta {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Multiplicando valores</h1>
+    <input type="number"id="numero1">
+    <input type="number"id="numero2">
+    <button id="multiplica">Calcular</button>
+    <div id='resposta'></div>
+
+    <script>
+        let n1 = document.querySelector('#numero1')
+        let n2 = document.querySelector('#numero2')
+        let botaoCalcular = document.querySelector('#multiplica')
+        let resposta = document.querySelector('#resposta')
+
+        function multiplica() {
+            
+            let n1Convertido = Number(n1.value)
+            let n2Convertido = Number(n2.value)
+
+            let multiplica = n1Convertido * n2Convertido 
+            resposta.innerText = multiplica
+
+        }
+
+        botaoCalcular.addEventListener("click" , multiplica)
+
+
+    </script>
+
+</body>
+
+</html>

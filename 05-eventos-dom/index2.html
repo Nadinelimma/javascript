@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input,
+        button {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        #resposta {
+            margin-top: 20px;
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <h1>Somando Valores</h1>
+        <input type="number" id="numero1">
+        <input type="number" id="numero2">
+        <button id="soma">Somar</button>
+        <div id="resposta">Resultado</div>
+
+
+
+        <script>
+            let n1 = document.querySelector('#numero1')
+            let n2 = document.querySelector('#numero2')
+            let botaosoma = document.querySelector('#soma')
+            let resposta = document.querySelector('#resposta')
+
+            function soma() {
+                let n1Convertido = Number(n1.value)
+                let n2Convertido = Number(n2.value)
+
+                let somatoria = n1Convertido + n2Convertido
+                resposta.innerText = somatoria
+
+            }
+
+            botaosoma.addEventListener('click', soma)
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+    #area {
+        background-color: #2a8b2a;
+        color: #fff;
+        width: 300px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+       
+        </style> 
+
+</head>
+<body>
+    <!-- <div onmouseout="sair()" onmouseenter="entrar()" onclick="clicar()" id="area">Interaja...</div>  -->
+     <div id="area">Interaja...</div>
+    
+    <script>
+
+let area = document.querySelector("#area")
+
+// ADICIONANDO EVENTO PELO JAVASCRIPT
+area.addEventListener('click', clicar ) 
+area.addEventListener('mouseenter', entrar)
+area.addEventListener('mouseout' , sair )
+
+function clicar () {
+    area.innerText = "Voce clicou"
+    area.style.background = 'red'
+}
+    
+function entrar(){
+area.innerText = "voce usou mouseente"
+area.style.background = 'orange'
+
+}
+
+function sair() {
+area.innerText = 'Saiu do quadrado'
+area.style.background = 'blue'
+
+}
+    </script>
+</body>
+</html>

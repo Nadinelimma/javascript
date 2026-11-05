@@ -1,0 +1,32 @@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #447dc7;
+            color: #fff;
+            font: normal 18pt Arial;
+        }
+        </style>
+</head>
+<body>
+    <h1 id="titulo">Apredendo DOM</h1>
+    <P class="paragrafo">Apredendo a usar o DOM em javascript</p>
+        
+    
+    <script>
+        let titulo = document.getElementById('titulo')
+        let paragrafo = document.getElementsByClassName('paragrafo')
+        
+        // queryseletor 
+        let tituloQuery = document.querySelector('#titulo')
+        let paragrafoQuery = document.querySelector('.paragrafo')
+
+        // comando de saida
+        console.log(titulo)
+        console.log(paragrafo)
+        </script>
+<body>
+</html> 
+
