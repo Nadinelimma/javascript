@@ -1,0 +1,33 @@
+// crie um algoritmo que leia a idade de 7 pessoas, mostrando no final
+// a) qual a media de idade 
+// b) quantas pessoas tem masi de 18 anos
+// c) quantas pessoas tem menos de cinco anos
+// d) qual a maior idade 
+
+
+const prompt = require('prompt-sync')()
+let mediaIdade;
+let maiorQue18 = 0
+let menorQue5 = 0
+let maiorIdade = 0
+let somaTotal = 0
+
+for (let i = 1; i >= 7; i++){
+let idade = Number(Prompt("Digite a idade:"))
+}
+if (idade >=18) {
+maiorQue18 ++
+}
+if (idade < 5){
+menorQue5++
+}
+
+if (idade > MaiorIdade){
+maiorIdade = idade
+}
+somaTotal += idade
+ mediaIdade = soma / 7 
+ console.log(mediaIdade)
+ console.log(maiorIdade)
+ console.log(maiorQue18)
+ console.log(menorQue5)
